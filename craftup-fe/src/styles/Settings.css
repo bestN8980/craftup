@@ -1,0 +1,460 @@
+
+.settings-page {
+  width: 100%;
+  color: #44352b;
+}
+
+.settings-heading {
+  margin-bottom: 25px;
+}
+
+.settings-eyebrow {
+  color: #a77b55;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.settings-heading h1 {
+  margin: 8px 0;
+  color: #3f3027;
+  font-size: 27px;
+}
+
+.settings-heading p {
+  margin: 0;
+  color: #8b7c70;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.settings-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.settings-section {
+  overflow: hidden;
+  border: 1px solid #ebe2d9;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.settings-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 19px 21px;
+  border-bottom: 1px solid #f0e9e2;
+}
+
+.settings-section-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f4ece3;
+  color: #916746;
+}
+
+.settings-section-heading h2 {
+  margin: 0 0 5px;
+  color: #49372b;
+  font-size: 15px;
+}
+
+.settings-section-heading p {
+  margin: 0;
+  color: #97887b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.settings-section-content {
+  padding: 21px;
+}
+
+/* Password */
+
+.settings-password-form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.settings-password-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 540px;
+}
+
+.settings-password-field > label {
+  color: #59483a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.settings-password-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid #e8ded4;
+  border-radius: 8px;
+  color: #a58c77;
+  transition: border-color 0.2s ease;
+}
+
+.settings-password-input:focus-within {
+  border-color: #a77b55;
+}
+
+.settings-password-input input {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #49372b;
+  font-size: 13px;
+}
+
+.settings-password-input input::placeholder {
+  color: #b4a79b;
+}
+
+.settings-password-input button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border: none;
+  background: transparent;
+  color: #978575;
+  cursor: pointer;
+}
+
+.settings-password-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 3px;
+}
+
+.settings-password-footer p {
+  margin: 0;
+  color: #a09286;
+  font-size: 11px;
+}
+
+.settings-primary-btn {
+  padding: 11px 17px;
+  border: none;
+  border-radius: 8px;
+  background: #76513a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.settings-primary-btn:hover {
+  background: #5e3d2a;
+}
+
+.settings-message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 10px 12px;
+  border-radius: 7px;
+  font-size: 12px;
+}
+
+.settings-message.success {
+  background: #edf6ed;
+  color: #4d8054;
+}
+
+.settings-message.error {
+  background: #fff0ed;
+  color: #b65749;
+}
+
+/* Notifications and privacy */
+
+.settings-notification-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-notification-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 16px 0;
+  border-bottom: 1px solid #f0e9e2;
+}
+
+.settings-notification-item:first-child {
+  padding-top: 0;
+}
+
+.settings-notification-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.settings-notification-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #faf4ed;
+  color: #987052;
+}
+
+.settings-notification-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.settings-notification-info h3 {
+  margin: 0 0 5px;
+  color: #49372b;
+  font-size: 13px;
+}
+
+.settings-notification-info p {
+  margin: 0;
+  color: #97887b;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* Toggle switch */
+
+.settings-switch {
+  position: relative;
+  display: inline-flex;
+  width: 42px;
+  height: 23px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.settings-switch input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.settings-switch-slider {
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  background: #d9d0c8;
+  transition: 0.2s ease;
+}
+
+.settings-switch-slider::before {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 17px;
+  left: 3px;
+  top: 3px;
+  border-radius: 50%;
+  background: #fff;
+  transition: 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.settings-switch input:checked + .settings-switch-slider {
+  background: #987052;
+}
+
+.settings-switch input:checked + .settings-switch-slider::before {
+  transform: translateX(19px);
+}
+
+.settings-switch input:focus-visible + .settings-switch-slider {
+  outline: 2px solid #76513a;
+  outline-offset: 3px;
+}
+
+/* Logout */
+
+.settings-logout-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 13px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.settings-logout-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #fff0ed;
+  color: #b75c4e;
+}
+
+.settings-logout-row > div:nth-child(2) {
+  flex: 1;
+}
+
+.settings-logout-row h3 {
+  margin: 0 0 5px;
+  color: #a95043;
+  font-size: 13px;
+}
+
+.settings-logout-row p {
+  margin: 0;
+  color: #97887b;
+  font-size: 11px;
+}
+
+.settings-logout-row > svg {
+  color: #a99b8f;
+  transition: transform 0.2s ease;
+}
+
+.settings-logout-row:hover > svg {
+  transform: translateX(4px);
+}
+
+/* Logout confirmation */
+
+.settings-confirm-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(39, 29, 22, 0.55);
+}
+
+.settings-confirm-modal {
+  width: 100%;
+  max-width: 390px;
+  padding: 27px;
+  border-radius: 14px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.settings-confirm-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: #fff0ed;
+  color: #b75c4e;
+}
+
+.settings-confirm-modal h2 {
+  margin: 0 0 9px;
+  color: #49372b;
+  font-size: 19px;
+}
+
+.settings-confirm-modal p {
+  margin: 0;
+  color: #938478;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.settings-confirm-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 23px;
+}
+
+.settings-confirm-actions button {
+  min-width: 105px;
+  padding: 11px 15px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.settings-cancel-btn {
+  border: 1px solid #e8ded4;
+  background: #fff;
+  color: #806f60;
+}
+
+.settings-logout-btn {
+  border: none;
+  background: #a95043;
+  color: #fff;
+}
+
+.settings-logout-btn:hover {
+  background: #8e4035;
+}
+
+@media (max-width: 600px) {
+  .settings-section-heading,
+  .settings-section-content {
+    padding: 16px;
+  }
+
+  .settings-notification-item {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .settings-notification-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .settings-password-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .settings-primary-btn {
+    width: 100%;
+  }
+
+  .settings-logout-row p {
+    line-height: 1.5;
+  }
+}
