@@ -24,8 +24,12 @@ app.use(express.urlencoded({ extended: true }));
 
 // Middleware
 app.use(helmet());
+const allowedOrigins = (
+  process.env.FRONTEND_URL || "http://localhost:5173"
+).split(",");
+
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: allowedOrigins,
   credentials: true,
 }));
 

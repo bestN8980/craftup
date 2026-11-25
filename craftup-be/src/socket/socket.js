@@ -3,13 +3,17 @@ import jwt from "jsonwebtoken";
 import { User } from "../models/index.js";
 
 export const initializeSocket = (httpServer) => {
-  const io = new Server(httpServer, {
-    cors: {
-      origin: "http://localhost:5173",
-      methods: ["GET", "POST"],
-      credentials: true,
-    },
-  });
+  const allowedOrigins = (
+  process.env.FRONTEND_URL || "http://localhost:5173"
+).split(",");
+
+const io = new Server(httpServer, {
+  cors: {
+    origin: allowedOrigins,
+    methods: ["GET", "POST"],
+    credentials: true,
+  },
+});
   console.log("Socket.IO server initialized successfully");
 
   // Xác thực JWT khi client kết nối Socket.IO
