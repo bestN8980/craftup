@@ -70,7 +70,7 @@ const SellerSidebar = ({
   const menuItems = [
     { id: "overview", label: "Tổng quan", icon: LayoutDashboard },
     { id: "products", label: "Sản phẩm", icon: Package },
-    { id: "orders", label: "Đơn hàng", icon: ShoppingBag, badge: "5" },
+    { id: "orders", label: "Đơn hàng", icon: ShoppingBag,},
     {
       id: "messages",
       label: "Tin nhắn",

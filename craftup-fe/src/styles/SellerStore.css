@@ -470,3 +470,210 @@
   font-size: 14px;
   font-weight: 700;
 }
+
+/* Loading */
+.store-loading {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: #8d5637;
+}
+
+.store-loading-icon {
+  animation: store-spin 1s linear infinite;
+}
+
+@keyframes store-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Create notice */
+.store-create-notice {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  margin-bottom: 22px;
+  background: #fff8ed;
+  border: 1px solid #ead5bd;
+  border-radius: 12px;
+  color: #8d5637;
+}
+
+.store-create-notice strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.store-create-notice p {
+  margin: 0;
+  font-size: 13px;
+  color: #806b5b;
+}
+
+/* Error */
+.store-error {
+  padding: 13px 16px;
+  margin-bottom: 20px;
+  border-radius: 9px;
+  color: #b42318;
+  background: #fef3f2;
+  border: 1px solid #fecdca;
+}
+
+/* Disabled button */
+.store-save-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* IMAGE UPLOAD */
+
+.store-image-field {
+  margin-top: 26px;
+}
+
+.store-image-field > label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #493326;
+}
+
+.store-logo-upload {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.store-logo-preview {
+  width: 110px;
+  height: 110px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px dashed #d8bda7;
+  border-radius: 14px;
+  background: #fff8f1;
+  color: #a77b5b;
+}
+
+.store-logo-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.store-image-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.store-image-actions > span {
+  font-size: 12px;
+  color: #8d796c;
+}
+
+.store-image-select-btn,
+.store-image-upload-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 15px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.store-image-select-btn {
+  border: 1px solid #ddc5b2;
+  background: white;
+  color: #805337;
+}
+
+.store-image-select-btn:hover {
+  background: #fff5eb;
+}
+
+.store-image-upload-btn {
+  border: none;
+  background: #9b6543;
+  color: white;
+}
+
+.store-image-upload-btn:hover {
+  background: #805033;
+}
+
+.store-image-select-btn:disabled,
+.store-image-upload-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* BANNER UPLOAD */
+
+.store-banner-upload {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border: 1px dashed #d8bda7;
+  border-radius: 12px;
+  background: #fff8f1;
+}
+
+.store-banner-upload img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.store-banner-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #a77b5b;
+}
+
+.store-banner-placeholder span {
+  font-size: 13px;
+}
+
+.store-banner-actions {
+  margin-top: 12px;
+}
+
+/* PREVIEW IMAGE */
+
+.store-preview-banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.store-preview-avatar {
+  overflow: hidden;
+}
+
+.store-preview-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

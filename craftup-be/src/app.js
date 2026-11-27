@@ -15,6 +15,7 @@ import favoriteRoutes from "./routes/favorite.routes.js";
 import conversationRoutes from "./routes/conversation.routes.js";
 import messageRoutes from "./routes/message.routes.js";
 import notificationRoutes from "./routes/notification.routes.js";
+import storeRoutes from "./routes/store.routes.js";
 
 
 const app = express();
@@ -35,6 +36,7 @@ app.use(cors({
 
 app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
+app.use("/api/stores", storeRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/cart", cartRoutes);
 app.use("/api/reviews", reviewRoutes);

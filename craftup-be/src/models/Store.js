@@ -43,6 +43,15 @@ const Store = sequelize.define(
       allowNull: true,
     },
 
+    logoPublicId: {
+      type: DataTypes.STRING(255),
+      allowNull: true,
+    },
+    bannerPublicId: {
+      type: DataTypes.STRING(255),
+      allowNull: true,
+    },
+
     address: {
       type: DataTypes.STRING(255),
       allowNull: true,
@@ -53,12 +62,17 @@ const Store = sequelize.define(
       allowNull: false,
       defaultValue: "PENDING",
     },
+    
   },
   {
     tableName: "stores",
     timestamps: true,
     underscored: true,
   }
+
+  
 );
+
+
 
 export default Store;
